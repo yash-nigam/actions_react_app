@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print
-        run: echo "Pull request operation - with ${{ github.event }}"
+        run: echo "Pull request operation - with ${{ toJson(github.event) }}"
         
