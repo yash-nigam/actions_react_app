@@ -2,6 +2,7 @@ name: Test Project
 on: 
   push:
     paths: src/**
+    branches: ['main', 'dev-*', 'feature-**' ]
   workflow_dispatch:
 jobs:
   test:
