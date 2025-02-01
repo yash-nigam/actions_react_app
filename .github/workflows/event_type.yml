@@ -1,0 +1,13 @@
+name: Test Project
+on: 
+  pull_request:
+    types:
+      - opened
+      - closed
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print
+        run: echo "Pull request operation - with ${{ github.event }}"
