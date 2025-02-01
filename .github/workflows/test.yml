@@ -1,5 +1,8 @@
 name: Test Project
-on: push
+on: 
+  push:
+    paths: src/**
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -14,3 +17,5 @@ jobs:
         run: npm ci
       - name: Run Tests
         run: npm test
+      - name: Run Lint
+        run: npm lint
