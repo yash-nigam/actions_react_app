@@ -3,7 +3,6 @@ on:
   push:
     paths: src/**
     branches: ['main', 'dev-*', 'feature-**' ]
-    #paths-ignore: '.github/workflows'
   pull_request:
     types: opened
     branches: ['main', 'dev-*', 'feature-**' ]
